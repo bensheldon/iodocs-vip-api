@@ -163,6 +163,33 @@
                             "Description": "Format of outputted data. (json or xml.)"
                         }
                     ]
+                },
+                {
+                    "MethodName": "getElectionOfficialById ",
+                    "Synopsis": "et the name and contact information for an election official.",
+                    "HTTPMethod": "GET",
+                    "URI": "/ElectionOfficials(:id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "id",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Election official's ID"
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
                 }
             ]
         }
