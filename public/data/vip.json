@@ -15,7 +15,7 @@
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "Election ID."
+                            "Description": "Election ID. e.g. 19146315665506307L"
                         },
                         {
                             "Name": "$expand",
@@ -47,9 +47,9 @@
                         {
                             "Name": "election_id",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "19146315665506307L",
                             "Type": "string",
-                            "Description": "Election ID."
+                            "Description": "Election ID. e.g. 19146315665506307L"
                         },
                         {
                             "Name": "$expand",
@@ -81,9 +81,9 @@
                         {
                             "Name": "id",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "19146315665506308L",
                             "Type": "string",
-                            "Description": "Election ID."
+                            "Description": "Election ID. e.g. 19146315665506308L"
                         },
                         {
                             "Name": "$format",
@@ -108,9 +108,9 @@
                         {
                             "Name": "id",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "19146324255441360L",
                             "Type": "string",
-                            "Description": "Election ID."
+                            "Description": "Election ID. e.g. 19146324255441360L"
                         },
                         {
                             "Name": "$format",
@@ -235,9 +235,9 @@
                         {
                             "Name": "state",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "'va'",
                             "Type": "string",
-                            "Description": "State abbreviation. Wrap in single quotes."
+                            "Description": "State abbreviation. Wrap in single quotes. e.g. 'va'"
                         },
                         {
                             "Name": "$format",
@@ -308,7 +308,7 @@
                 },
                 {
                     "MethodName": "getElectionOfficialById ",
-                    "Synopsis": "et the name and contact information for an election official.",
+                    "Synopsis": "Get the name and contact information for an election official.",
                     "HTTPMethod": "GET",
                     "URI": "/ElectionOfficials(:id)",
                     "RequiresOAuth": "N",
@@ -316,9 +316,9 @@
                         {
                             "Name": "id",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "19146315665506310L",
                             "Type": "string",
-                            "Description": "Election official's ID"
+                            "Description": "Election official's ID. e.g. 19146315665506310L"
                         },
                         {
                             "Name": "$format",
