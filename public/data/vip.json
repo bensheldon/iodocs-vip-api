@@ -39,7 +39,7 @@
                 },
                 {
                     "MethodName": "getElectionInfo",
-                    "Synopsis": "Get all information about an election using OData specification.",
+                    "Synopsis": "Get information about specified election object.",
                     "HTTPMethod": "GET",
                     "URI": "/Elections(:election_id)",
                     "RequiresOAuth": "N",
@@ -57,6 +57,60 @@
                             "Default": "State,State/ElectionAdministration,State/ElectionAdministration/PhysicalAddress,State/EarlyVoteSites,State/ElectionAdministration/ElectionOfficial",
                             "Type": "static",
                             "Description": "Leave this alone."
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
+                    "MethodName": "getStateById",
+                    "Synopsis": "Get state by ID. The State object includes state-wide election information. The ID attribute is often the state's FIPS code. Subtag data must appear in the order below.",
+                    "HTTPMethod": "GET",
+                    "URI": "/States(:id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "id",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Election ID."
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
+                    "MethodName": "getPollingLocationById",
+                    "Synopsis": "Get polling location by ID. The Polling Location object represents a site where voters cast ballots on Election Day.",
+                    "HTTPMethod": "GET",
+                    "URI": "/PollingLocations(:id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "id",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Election ID."
                         },
                         {
                             "Name": "$format",
