@@ -6,5 +6,5 @@
         "publicPath": "/vip/3.0",
         "auth": "key",
         "keyParam": "key"
-    },
+    }
 }
