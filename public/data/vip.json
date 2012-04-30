@@ -253,6 +253,33 @@
                     ]
                 },
                 {
+                    "MethodName": "getStreetSegmentById ",
+                    "Synopsis": "Get street segment by ID.",
+                    "HTTPMethod": "GET",
+                    "URI": "/StreetSegments(:id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "id",
+                            "Required": "Y",
+                            "Default": "19146324255458407L",
+                            "Type": "string",
+                            "Description": "StreetSegments identifier. e.g. 19146324255458407L"
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
                     "MethodName": "getElectionAdministrationById ",
                     "Synopsis": "Get the name and contact information for the institution that serves a locality's (or state's) election functions.",
                     "HTTPMethod": "GET",
