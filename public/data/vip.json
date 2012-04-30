@@ -108,35 +108,35 @@
                         {
                             "Name": "house",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "2167",
                             "Type": "integer",
                             "Description": "House number."
                         },
                         {
                             "Name": "street",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "'W 30th St'",
                             "Type": "string",
                             "Description": "Street name. Wrap in single quotes."
                         },
                         {
                             "Name": "city",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "'Cleveland'",
                             "Type": "string",
                             "Description": "City name. Wrap in single quotes."
                         },
                         {
                             "Name": "state",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "'OH'",
                             "Type": "string",
                             "Description": "State abbreviation. Wrap in single quotes."
                         },
                         {
                             "Name": "zip",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "'44113'",
                             "Type": "string",
                             "Description": "Zip code. Wrap in single quotes."
                         },
@@ -161,7 +161,7 @@
                         {
                             "Name": "onlyupcoming",
                             "Required": "N",
-                            "Default": "true",
+                            "Default": "false",
                             "Type": "enumerated",
                             "EnumeratedList": [
                                 "true",
@@ -184,6 +184,33 @@
                             "Default": "",
                             "Type": "string",
                             "Description": "State abbreviation. Wrap in single quotes."
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
+                    "MethodName": "getElectionAdministrationById ",
+                    "Synopsis": "Get the name and contact information for the institution that serves a locality's (or state's) election functions.",
+                    "HTTPMethod": "GET",
+                    "URI": "/ElectionAdministrations(:id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "id",
+                            "Required": "Y",
+                            "Default": "19146315665506309L",
+                            "Type": "string",
+                            "Description": "Election administration's ID. e.g. 19146315665506309L"
                         },
                         {
                             "Name": "$format",
