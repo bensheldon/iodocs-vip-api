@@ -117,6 +117,8 @@ ul
                                                                            option(value=choice, selected=true) #{choice}
                                                                    - else
                                                                            option(value=choice) #{choice}
+                                                      - else if (parameter.Type =='static')
+                                                          input(name='params[' + parameter.Name + ']', value=parameter.Default, readonly='readonly', placeholder=className)
                                                       - else
                                                           input(name='params[' + parameter.Name + ']', value=parameter.Default, placeholder=className)
                                                   td.type=parameter.Type

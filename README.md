@@ -417,7 +417,7 @@ Line:
 
 15. "Default" key value is a string, containing a default value that will be automatically populated onto the form.
 
-16. "Type" key value can be an arbitrary string that describes the variable type; however, the value is *boolean* or *enumerated* a drop-down (select) box will appear.
+16. "Type" key value can be an arbitrary string that describes the variable type. If the value is *static*, the field will be uneditable. If the value is *boolean* or *enumerated* a drop-down (select) box will appear.
 
 17. "Description" key value is a string, containing the description of the parameter.
 
