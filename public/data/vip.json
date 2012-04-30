@@ -281,7 +281,7 @@
                 },
                 {
                     "MethodName": "getElectionOfficialById ",
-                    "Synopsis": "et the name and contact information for an election official.",
+                    "Synopsis": "Get the name and contact information for an election official.",
                     "HTTPMethod": "GET",
                     "URI": "/ElectionOfficials(:id)",
                     "RequiresOAuth": "N",
