@@ -22,31 +22,31 @@
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "Street name."
+                            "Description": "Street name. Wrap in single quotes."
                         },
                         {
                             "Name": "city",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "City name."
+                            "Description": "City name. Wrap in single quotes."
                         },
                         {
                             "Name": "state",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "State abbreviation."
+                            "Description": "State abbreviation. Wrap in single quotes."
                         },
                         {
                             "Name": "zip",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "Zip code."
+                            "Description": "Zip code. Wrap in single quotes."
                         },
                         {
-                            "Name": "format",
+                            "Name": "$format",
                             "Required": "Y",
                             "Default": "json",
                             "Type": "enumerated",
@@ -55,6 +55,13 @@
                                 "xml"
                                ],
                             "Description": "Format of outputted data. (json or xml.)"
+                        },
+                        {
+                            "Name": "$expand",
+                            "Required": "Y",
+                            "Default": "Election/State/ElectionAdministration,Locations/PollingLocation/Address,Locations/SourceStreetSegment/NonHouseAddress",
+                            "Type": "string",
+                            "Description": "Leave this alone."
                         },
                         {
                             "Name": "onlyupcoming",
