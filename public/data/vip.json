@@ -4,6 +4,33 @@
             "name": "Public methods",
             "methods": [
                 {
+                    "MethodName": "getElectionAsOData",
+                    "Synopsis": "Get all information about an election using OData specification.",
+                    "HTTPMethod": "GET",
+                    "URI": "/Elections(:election_id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "election_id",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Election ID."
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
                     "MethodName": "getPollingLocation",
                     "Synopsis": "Get polling location by address.",
                     "HTTPMethod": "GET",
@@ -60,7 +87,7 @@
                             "Name": "$expand",
                             "Required": "Y",
                             "Default": "Election/State/ElectionAdministration,Locations/PollingLocation/Address,Locations/SourceStreetSegment/NonHouseAddress",
-                            "Type": "string",
+                            "Type": "static",
                             "Description": "Leave this alone."
                         },
                         {
