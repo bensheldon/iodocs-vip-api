@@ -38,6 +38,40 @@
                     ]
                 },
                 {
+                    "MethodName": "getElectionInfo",
+                    "Synopsis": "Get all information about an election using OData specification.",
+                    "HTTPMethod": "GET",
+                    "URI": "/Elections(:election_id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "election_id",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Election ID."
+                        },
+                        {
+                            "Name": "$expand",
+                            "Required": "Y",
+                            "Default": "State,State/ElectionAdministration,State/ElectionAdministration/PhysicalAddress,State/EarlyVoteSites,State/ElectionAdministration/ElectionOfficial",
+                            "Type": "static",
+                            "Description": "Leave this alone."
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
                     "MethodName": "getElectionAsOData",
                     "Synopsis": "Get all information about an election using OData specification.",
                     "HTTPMethod": "GET",
