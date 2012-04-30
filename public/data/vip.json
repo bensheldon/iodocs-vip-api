@@ -72,6 +72,33 @@
                     ]
                 },
                 {
+                    "MethodName": "getStateById",
+                    "Synopsis": "Get all information about an election using OData specification.",
+                    "HTTPMethod": "GET",
+                    "URI": "/States(:id)",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "id",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Election ID."
+                        },
+                        {
+                            "Name": "$format",
+                            "Required": "Y",
+                            "Default": "json",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "json",
+                                "xml"
+                               ],
+                            "Description": "Format of outputted data. (json or xml.)"
+                        }
+                    ]
+                },
+                {
                     "MethodName": "getElectionAsOData",
                     "Synopsis": "Get all information about an election using OData specification.",
                     "HTTPMethod": "GET",
