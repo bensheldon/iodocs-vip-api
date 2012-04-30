@@ -15,35 +15,35 @@
                             "Required": "Y",
                             "Default": "",
                             "Type": "integer",
-                            "Description": "House number"
+                            "Description": "House number."
                         },
                         {
                             "Name": "street",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "Street name"
+                            "Description": "Street name."
                         },
                         {
                             "Name": "city",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "City name"
+                            "Description": "City name."
                         },
                         {
                             "Name": "state",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "State abbreviation"
+                            "Description": "State abbreviation."
                         },
                         {
                             "Name": "zip",
                             "Required": "Y",
                             "Default": "",
                             "Type": "string",
-                            "Description": "Zip code"
+                            "Description": "Zip code."
                         },
                         {
                             "Name": "format",
@@ -54,7 +54,18 @@
                                 "json",
                                 "xml"
                                ],
-                            "Description": "Format of outputted data. (json or xml)"
+                            "Description": "Format of outputted data. (json or xml.)"
+                        },
+                        {
+                            "Name": "onlyupcoming",
+                            "Required": "N",
+                            "Default": "true",
+                            "Type": "enumerated",
+                            "EnumeratedList": [
+                                "true",
+                                "false"
+                               ],
+                            "Description": "Return information only for upcoming elections, if they exist."
                         }
                     ]
                 }
