@@ -13,7 +13,7 @@
                         {
                             "Name": "election_id",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "19146315665506307L",
                             "Type": "string",
                             "Description": "Election ID. e.g. 19146315665506307L"
                         },
@@ -135,9 +135,9 @@
                         {
                             "Name": "election_id",
                             "Required": "Y",
-                            "Default": "",
+                            "Default": "19146315665506307L",
                             "Type": "string",
-                            "Description": "Election ID."
+                            "Description": "Election ID. e.g. 19146315665506307L"
                         },
                         {
                             "Name": "$format",
@@ -164,35 +164,35 @@
                             "Required": "Y",
                             "Default": "2167",
                             "Type": "integer",
-                            "Description": "House number."
+                            "Description": "House number. e.g. 2167."
                         },
                         {
                             "Name": "street",
                             "Required": "Y",
                             "Default": "'W 30th St'",
                             "Type": "string",
-                            "Description": "Street name. Wrap in single quotes."
+                            "Description": "Street name. Wrap in single quotes. e.g. 'W 30th St'."
                         },
                         {
                             "Name": "city",
                             "Required": "Y",
                             "Default": "'Cleveland'",
                             "Type": "string",
-                            "Description": "City name. Wrap in single quotes."
+                            "Description": "City name. Wrap in single quotes. e.g. 'Cleveland'."
                         },
                         {
                             "Name": "state",
                             "Required": "Y",
                             "Default": "'OH'",
                             "Type": "string",
-                            "Description": "State abbreviation. Wrap in single quotes."
+                            "Description": "State abbreviation. Wrap in single quotes. e.g. 'OH'"
                         },
                         {
                             "Name": "zip",
                             "Required": "Y",
                             "Default": "'44113'",
                             "Type": "string",
-                            "Description": "Zip code. Wrap in single quotes."
+                            "Description": "Zip code. Wrap in single quotes. e.g. '44113'"
                         },
                         {
                             "Name": "$format",
@@ -235,9 +235,9 @@
                         {
                             "Name": "state",
                             "Required": "Y",
-                            "Default": "'va'",
+                            "Default": "'VA'",
                             "Type": "string",
-                            "Description": "State abbreviation. Wrap in single quotes. e.g. 'va'"
+                            "Description": "State abbreviation. Wrap in single quotes. e.g. 'VA'"
                         },
                         {
                             "Name": "$format",
